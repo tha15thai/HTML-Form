@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Library Member</title>
+
+            <!-- viewport -->
+                <meta name="viewport" content="width=device-width , initial-scale=1.0 , user-scalable=1">
+
+            <!-- font from google -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Slackey&family=Taviraj&display=swap" rel="stylesheet">
+          
+        <!-- style -->
+        <style>
+            
+            h1{
+                font-family: 'Taviraj', serif;
+                text-align: center;
+            }
+
+            hr {
+                width: 80%;
+                border: 1.5px solid;
+                border-radius: 20px;
+            }
+            
+            body{
+                font-family: 'Taviraj', serif;
+                padding: 10px;
+                background: url(https://c4.wallpaperflare.com/wallpaper/955/887/823/design-fantasy-harry-library-wallpaper-preview.jpg);
+                background-size: cover;
+            }
+
+            form {
+                border: 6px solid;
+                background-color: rgba(255, 255, 255, 0.914);
+                border-radius: 30px;
+                text-align: center;
+                margin: 50px auto;
+                width: 500px;
+                padding: 10px;
+            }
+
+            input[type=submit]:hover {
+                background-color: rgb(255, 208, 0);
+                color: rgb(209, 80, 0);
+                border: none;
+                width: 110px;
+                font-size: 20px;
+                font-family: 'Taviraj', serif;
+                border-radius: 20px;
+            }
+
+            input[type=submit] {
+                background-color: rgb(255, 208, 0);
+                border: none;
+                width: 100px;
+                font-size: 20px;
+                font-family: 'Taviraj', serif;
+                border-radius: 20px;
+            }
+
+            input:focus {
+                background-color: rgb(248, 239, 201);
+            }
+
+            #first ,#last,#firstE,#lastE {
+                width: 60%;
+            }
+
+            input[type=email] {
+                width: 50%;
+            }
+
+        </style>
+
+    </head>
+        
+    <body>
+        <!-- response page -->
+        <form action="success.html" method="post" autocomplete="on">
+            <h1>สมัครสมาชิกห้องสมุด CSTU</h1>
+                <hr> </br>
+                <!-- Name Thai-->
+                    <label for="fname">Firstname (Thai)</label> </br> 
+                    <input type="text" id="first" name="fname" lang="th" required> </br> </br>
+                    <label for="lname">Lastname (Thai)</label> </br> 
+                    <input type="text" id="last" name="lname" required> </br> </br>
+
+                <!-- Name Eng-->
+                    <label for="fname">Firstname (Eng)</label> </br>
+                    <input type="text" id="firstE" name="fnameE" required> </br> </br>
+                    <label for="lname">Lastname (Eng)</label> </br>
+                    <input type="text" id="lastE" name="lnameE" required> </br> </br>
+                
+                <!-- Gender -->
+                    <label for="Gend">Gender</label> </br>
+                    <input type="radio" id="woman" name="Gend" value="woman">
+                    <label for="woman">Woman</label>
+                    <input type="radio" id="man" name="Gend" value="man">
+                    <label for="man">Man</label>
+                    <input type="radio" id="LGBTQIA+" name="Gend" value="LGBTQIA+">
+                    <label for="lgbtqia+">LGBTQIA+</label>
+                    <input type="radio" id="none" name="Gend" value="none" checked>
+                    <label for="none">None</label> </br></br>
+
+                <!-- Student ID -->
+                    <label for="SID">Student-ID</label> </br> 
+                    <input type="text" id="SID" name="SID" minlength="10" maxlength="10" required> </br> </br>
+
+                <!-- Faculty -->
+                    <label for="faculty"> Faculty </label>
+                        <select name="faculty">
+                            <option value="01">คณะนิติศาสตร์</option>
+                            <option value="02">คณะพาณิชยศาสตร์และการบัญชี</option>
+                            <option value="03">คณะรัฐศาสตร์</option>
+                            <option value="04">คณะเศรษฐศาสตร์</option>
+                            <option value="05">คณะสังคมสงเคราะห์ศาสตร์</option>
+                            <option value="06">คณะศิลปศาสตร์</option>
+                            <option value="07">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                            <option value="08">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                            <option value="09">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                            <option value="10">คณะวิศวกรรมศาสตร์</option>
+                            <option value="11">คณะแพทยศาสตร์</option>
+                            <option value="12">คณะสหเวชศาสตร์</option>
+                            <option value="13">คณะทันตแพทยศาสตร์</option>
+                            <option value="14">คณะพยาบาลศาสตร์</option>
+                            <option value="15">คณะศิลปกรรมศาสตร์</option>
+                            <option value="16">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                            <option value="22">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                            <option value="23">วิทยาลัยนวัตกรรม</option>
+                            <option value="24">วิทยาลัยสหวิทยาการ</option>
+                            <option value="pridi">วิทยาลัยนานาชาติ ปรีดี พนมยงค์</option>
+                            <option value="kru">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                            <option value="boran">วิทยาลัยโลกคดีศึกษา</option>
+                            <option value="puey">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
+                            <option value="sa">คณะสาธารณสุขศาสตร์</option>
+                            <option value="pa">คณะเภสัชศาสตร์</option>
+                            <option value="pat">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+                        </select> </br></br>
+
+                <!-- Email -->
+                    <label for="email">Email</label> </br>
+                    <input type="email" name="email" placeholder="yourname@dome.tu.ac.th" required > </br></br>
+                    
+                <!-- BirthDay -->
+                    <label for="date">Birthday</label> </br>
+                    <input type="date" name="bd" required> </br></br>
+
+                <!--UserInfo-->
+                    <label for="username">Username </label>
+                    <input type="text" name="username" placeholder="4-12 characters" minlength="4" maxlength="12" required > </br></br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="8 characters" minlength="8" maxlength="8" required > </br></br>
+               
+                <!-- Register -->
+                    <input type="submit" value="Register" >  </br></br>
+        </form>
+
+            
+    </body>
+
+</html>
